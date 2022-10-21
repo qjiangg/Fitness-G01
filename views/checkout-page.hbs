@@ -1,0 +1,60 @@
+<h1>Checkout</h1>
+<div class="checkout-container">
+    <div class="checkout-sub-container">
+
+        <span>CUSTOMER DETAILS</span>
+        <input type="firstname" name="firstnameFromUI" id="firstnameFromUI" placeholder="Enter your first name" required>
+        <input type="lastname" name="lastnameFromUI" id="lastnameFromUI" placeholder="Enter your last name" required>
+
+        <span>WOULD YOU LIKE TO JOIN AS A MEMBER</span>
+        <p>Members get unlimited classes, for a low monthly price.</p>
+
+        <div style="display: block;">
+            <input type="radio" id="yesMembershipFromUI" name="MembershipFromUI" value="yes" onclick="displayTotal()">
+            <label for="contactChoice1">Yes</label>
+
+            <input type="radio" id="noMembershipFromUI" name="MembershipFromUI" value="no" onclick="displayTotal()"
+                checked>
+            <label for="contactChoice2">No</label>
+        </div>
+
+        <select name="membershipTypeFromUI" id="memberTypeFromUI" onclick="displayTotal()">
+            <option value="monthly">Monthly Billing: $75/month</option>
+            <option value="yearly">Yearly Billing: $900/year</option>
+        </select>
+
+        <span>PAYMENT INFORMATION</span>
+        <input type="text" name="creditCardNumFromUI" id="creditCardFromUI" placeholder="Enter your credit card number" required>
+        <div style="display: flex; flex-direction: row;">
+            <input type="text" id="creditCardExpiryYear" placeholder="Expiry Year (YY)" required>
+            <input type="text" id="creditCardExpiryMonth" placeholder="Expiry Month (MM)" required>
+        </div>
+
+        
+            <button id="payBtn" onclick="payBtnHandler()">PAY</button>
+      
+    </div>
+
+    <div class="checkout-sub-container">
+        <h2>Cart</h2>
+        {{!-- store cart data in DB and render to client --}}
+        <div class="checkout-subsub-container">
+
+        </div>
+
+        <div class="checkout-subsub-container">
+            <p>Subtotal: </p>
+            <p id="checkout-subtotal">$ 0</p>
+            <p>Tax:</p>
+            <p id="checkout-tax">$ 0</p>
+        </div>
+
+        <div class="checkout-subsub-container">
+            <p>Total: </p>
+            <p id="checkout-total">$ 0</p>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/checkout-page.js"></script>

@@ -1,0 +1,23 @@
+<section id="classes">
+    <h1>Our Classes</h1>
+    <p id="classes-subtitle">Let us help you find a class that meets your fitness goals.</p>
+    {{#each this.classArrayToUI}}
+    <div id="class-list">
+        <div id="class-info">
+            <div id="class-image">
+                <img src="{{ this.classPhoto }}">
+            </div>
+            <div id="class-description">
+                <h2><span id="class-name">{{ this.className }}</span> with <span id="class-instructor">{{ this.classInstructor
+                        }}</span></h2>
+                <p id="class-length">{{ this.classLength }} MIN</p>
+                <button class="book-btn" id="book-btn-{{this.classId}}" value="{{this.classId}}" 
+                onclick="bookBtnHandler(this.value)">Book Now</button>
+                <p class="booked-message" id="booked-message-{{this.classId}}">This class is already in your cart.</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</section>
+
+<script src="/js/schedule-page.js"></script>

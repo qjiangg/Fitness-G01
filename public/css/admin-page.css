@@ -1,0 +1,111 @@
+#orders h1 {
+  font-family: Lato, 'Courier New', Courier, monospace;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0;
+}
+
+#order-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 20px 30px;
+}
+#order-info > div > p {
+  font-family: Lato, 'Courier New', Courier, monospace;
+}
+#order-container {
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid rgb(203, 200, 200);
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+#order-number h2 {
+  font-family: Lato, 'Courier New', Courier, monospace;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-align: left;
+  padding: 20px 30px 0 30px;
+}
+
+#order-info p {
+  font-family: Lato, 'Courier New', Courier, monospace;
+}
+
+.order-detail {
+  padding-bottom: 8px;
+}
+
+#order-class-container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-color: rgb(235, 241, 247);
+  margin-bottom: 10px;
+}
+
+#order-class-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#order-lass-image img {
+  width: 90%;
+  height: 75%;
+  margin: auto;
+}
+
+#order-class-name,
+#order-class-instructor {
+  color: #20639b;
+  font-size: 18px;
+
+  font-family: Roboto, 'Courier New', Courier, monospace;
+}
+
+#order-class-info h3 {
+  font-size: 13px;
+  font-family: Roboto, 'Courier New', Courier, monospace;
+  color: rgb(28, 25, 25);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#order-class-info {
+  text-align: left;
+  padding: 18px 30px;
+
+}
+
+#class-length {
+  color: black;
+  padding: 15px 0;
+  font-family: Roboto, 'Courier New', Courier, monospace;
+  font-weight: 400;
+}
+
+#order-class-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+#order-class-image img {
+  width: 200px;
+  height: 130px;
+  margin: auto;
+}
+
+#order-expense {
+  display: flex;
+  padding: 10px 30px 20px 30px;
+  justify-content: space-between;
+}
+
+#order-expense > div > p {
+  padding: 3px 0;
+  font-family: Lato, 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,53 @@
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('/assets/fitness-center.jpeg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-container {
+  text-align: center;
+  padding-bottom: 35px;
+  background-color: #0f0e166e;
+  padding: 30px 50px 60px 50px;
+}
+
+#hero-container h1{
+  color: white;
+  font-family: Lato, 'Courier New', Courier, monospace;
+  font-size: 45px;
+  padding: 20px;
+}
+
+#hero-container p{
+  color: white;
+  font-family: Roboto, 'Courier New', Courier, monospace;
+  padding-bottom: 15px;
+  font-size: 18px;
+  letter-spacing:0.1ch;
+}
+
+#home-btn{
+  background-color: rgb(255, 145, 0);
+  font-family: Roboto, 'Courier New', Courier, monospace;
+  font-weight: 500;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#home-btn a {
+  text-decoration: none;
+  color: white;
+}
+#home-btn:hover{
+  background-color: rgb(255, 115, 0);
+  cursor: pointer;
+}
+#booked-message {
+  font-family: Roboto, 'Courier New', Courier, monospace;
+}

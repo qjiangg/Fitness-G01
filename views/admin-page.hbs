@@ -1,0 +1,52 @@
+<section id="orders">
+  <h1>Order History</h1>
+  {{#each this.classArrayToUI}}
+  <div id="order-container">
+    <div id="order-number">
+      <h2>Order #{{ this.orderId}}</h2>
+    </div>
+    <div id="order-info">
+      <div>
+        <p class="order-detail">Name</p>
+        <p>{{this.userFirstName}} {{this.userLastName}}</p>
+      </div>
+      <div>
+        <p class="order-detail">Email</p>
+        <p>{{ this.userEmail}}</p>
+      </div>
+      <div>
+        <p class="order-detail">Payment Method</p>
+        <p>{{ this.orderCreditCardNum}} </p>
+      </div>
+    </div>
+      {{#each this.orderClassesId}}
+      <div id="order-class-container">
+        <div id="order-class-image">
+          <img src="{{ this.classPhoto }}">
+        </div>
+        <div id="order-class-info">
+          <h3><span id="order-class-name">{{ this.className }}</span> with <span id="order-class-instructor">{{
+              this.classInstructor
+              }}</span></h3>
+          <p id="order-class-length">{{ this.classLength }} MIN</p>
+        </div>
+      </div>
+      {{/each}}
+    <div id="order-expense">
+      <div>
+        <p>Membership</p>
+        <p>Subtotal</p>
+        <p>Tax</p>
+        <p>Total</p>
+      </div>
+      <div>
+        <p>{{this.userMembership
+          }}</p>
+        <p>{{this.orderSubtotal}}</p>
+        <p>{{this.orderTax}}</p>
+        <p>{{this.orderTotal}}</p>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</section>

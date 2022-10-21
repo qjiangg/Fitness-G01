@@ -1,0 +1,21 @@
+#confirmation{
+  text-align: center;
+}
+#confirmation h1{
+  margin-top: 50px;
+}
+
+#confirmation h2{
+  margin-top: 20px;
+}
+#confirm-btn{
+  background-color: orange;
+  padding: 7px;
+  text-align: center;
+  width: 110px;
+  border: 1 solid gray;
+  margin-top: 20px;
+}
+#confirm-btn:hover{
+  cursor: pointer;
+}
